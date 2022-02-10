@@ -12,7 +12,7 @@ const server = express();
 server.listen(PORT, () => {
   console.log(`Server listening on PORT: ${PORT}`);
 });
-server.get("/", function (request, response) {
+server.get("/", function (req, res) {
   server.get("/", (req, res) => {});
   res.send(db);
 });
